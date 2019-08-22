@@ -5,6 +5,7 @@
     <div v-for="status in statuses">
       <h5>Tricker: {{status.user}} </h5>
       <p> {{status.text}} </p>
+      <p> ------------------------------------------------------- </p>
     </div>
   </div>
 </template>

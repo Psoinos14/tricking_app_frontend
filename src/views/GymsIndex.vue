@@ -4,6 +4,7 @@
     <div v-for="gym in gyms">
       <h2>{{ gym.name }}</h2>
       <p>address: {{ gym.address }}</p>
+      <p> ------------------------------------------------------- </p>
     </div>
   </div>
 </template>
