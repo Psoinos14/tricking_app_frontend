@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <h1>{{ message }}</h1>
+    <button v-on:click="createStatus()">What have you been up to?</button>
     <h2>{{message2}}</h2>
     <div v-for="status in statuses">
       <h5>Tricker: {{status.user}} </h5>
@@ -29,6 +30,16 @@ export default {
       this.statuses = response.data;
     });
   },
-  methods: {}
+  methods: {
+    createStatus: function() {
+      var newStatus = {
+        Text: this.newText,
+        User: this.currentuser
+        // Day: this.newDayAndTimeDay,
+        // Time: this.newDayAndTimeTime,
+        // Gym: this.newDayAndTimeGymID,
+      };
+    }
+  }
 };
 </script>

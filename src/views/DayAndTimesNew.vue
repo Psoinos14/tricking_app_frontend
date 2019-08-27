@@ -1,14 +1,14 @@
 <template>
   <div class="container">
-    <h1>New Check-in</h1>
+    <h1>New Session</h1>
     <form v-on:submit.prevent="createDayAndTime()">
       <ul>
         <li v-for="error in errors"> {{ error}} </li>
       </ul>
-      Day:
-      <input type="text" v-model="newDayAndTimeDay" />
-      Time:
-      <input type="text" v-model="newDayAndTimeTime" />
+      Date and Time:
+      <input type="datetime-local" v-model="newDayAndTimeDay" />
+      <!-- Time:
+      <input type="text" v-model="newDayAndTimeTime" placeholder="blanktime"/> -->
       Gym:
       <input type="text" v-model="newDayAndTimeGymID" />
       <input type="submit" value="Create" />
@@ -37,9 +37,9 @@ export default {
   methods: {
     createDayAndTime: function() {
       var params = {
-        Day: this.newDayAndTimeDay,
-        Time: this.newDayAndTimeTime,
-        Gym: this.newDayAndTimeGymID,
+        datetime: this.newDayAndTimeDay,
+        
+        gym_id: this.newDayAndTimeGymID,
       };
       axios
         .post("/api/day_and_times", params)
@@ -54,5 +54,3 @@ export default {
   }
 };
 </script>
-<!-- 
-GET RID OF USER CREATE FIELD, SET UP AUTHENTICATION WITH VUE JS AUTHENTICATION CHEAT SHEET,  -->
