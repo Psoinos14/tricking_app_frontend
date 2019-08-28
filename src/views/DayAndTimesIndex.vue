@@ -14,6 +14,9 @@
         </p>
         <p> Location: {{attendee.location}}
         </p>
+        <p><button v-on:click="createFriendRequest(attendee.id)">Add Friend</button></p>
+        <!-- <div v-if="currentUser === user"> -->
+          <!-- <p> user_id: -->
         <p> -------------------------------------------------------  </p>
 
       </div>
@@ -47,6 +50,15 @@ export default {
         day_and_time_id: day_and_timeID
       };
       axios.post("/api/attendees", params).then(response => {
+        this.$router.go();
+      });
+    },
+    createFriendRequest: function(friendid) {
+      console.log(friendid);
+      var params = {
+        friend_id: friendid
+      };
+      axios.post("/friend_requests", params).then(response => {
         this.$router.go();
       });
     }

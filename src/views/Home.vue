@@ -2,7 +2,7 @@
   <div class="home">
     <h1>{{ message }}</h1>
     <input type="text" v-model="newStatusText" placeholder="Land a new trick?"/> 
-    <button v-on:click="createFriends()">Post Status</button>
+    <button v-on:click="createStatus()">Post Status</button>
     <h2>{{message2}}</h2>
     <div v-for="friend in friends">
       <h5>Tricker: {{friend.user}} </h5>
@@ -33,19 +33,25 @@ export default {
   },
   created: function() {
     axios.get("/api/statuses").then(response => {
+      const new_friends = response.data;
+      new_friends.forEach(friend => {
+        this.friends.push(friend)
+      })
       console.log(response.data);
-      this.friends = response.data;
+      // this.friends = response.data;
     });
   },
   methods: {
-    createFriends: function() {
+    createStatus: function() {
       var params = {
         text: this.newStatusText
       };
       axios
         .post("/api/statuses", params)
-        .then(response => {
-          
+        .then(response => { 
+          const newStatus = response.data
+          console.log(newStatus)
+          // add this to the current user's statuses array using push
         })
         .catch(error => {
           console.log(error.response);
