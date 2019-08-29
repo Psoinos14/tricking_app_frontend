@@ -46,10 +46,13 @@ export default {
       // new_friends.forEach(friend => {
       //   this.friends.push(friend);
       // });
-      // console.log(response.data);
+
+      
+      
       this.friends = (response.data[1]);
       this.myStatuses = response.data[0]['statuses'];
       // this.friends = response.data;
+      console.log(this.allStatuses);
     });
   },
   methods: {

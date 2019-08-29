@@ -7,6 +7,7 @@ import Login from "./views/Login.vue";
 import Logout from "./views/Logout.vue";
 import GymsIndex from "./views/GymsIndex.vue";
 import DayAndTimesIndex from "./views/DayAndTimesIndex.vue";
+import FriendRequestsIndex from "./views/FriendRequestsIndex.vue";
 
 Vue.use(Router)
 
@@ -16,8 +17,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: Home
+      name: 'login',
+      component: Login
     },
     {
       path: '/about',
@@ -34,8 +35,8 @@ export default new Router({
     },
     {
       path: "/login",
-      name: "login",
-      component: Login
+      name: "home",
+      component: Home
     },
     {
       path: "/logout",
@@ -56,6 +57,11 @@ export default new Router({
       path: '/day_and_times',
       name: 'day_and_times-index',
       component: DayAndTimesIndex
+    },
+    {
+      path: "/friend_requests",
+      name: "friend_requests-index",
+      component: FriendRequestsIndex
     }
   ]
 })
