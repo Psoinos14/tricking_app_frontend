@@ -2,7 +2,9 @@
   <div class="container">
     <h1> All Incoming Friend Requests </h1>
     <div v-for="friend_request in friend_requests">
-      <p> {{friend_request.incoming}} </p>
+      <p> {{friend_request.incoming_friend_requests}} </p>
+      <button v-on:click="createFriendship(friend_request.friend_id)">Accept Friend Request</button>
+      <!-- <button v-on:click="destroyFriendRequest()">Deny Friend Request</button> -->
     </div>
   </div>
 
@@ -28,10 +30,11 @@ export default {
   },
 
   methods: {
-    submit: function() {
+    createFriendship: function(id) {
+      console.log(id)
 
       var params = {
-        user_id: this.user_id
+        user_id: id
       };
       axios.post("/friendships", params).then(response => {
         this.friend_requests = response.data;

@@ -3,7 +3,6 @@
     <h1>All Sessions</h1>
     <div v-for="day_and_time in day_and_times">
       <h2> {{ day_and_time.gym_name}} </h2>
-      <p> ID: {{day_and_time.ID}} </p>
       <p> {{ day_and_time.day }} </p>
       <p> {{ day_and_time.date_time}} </p>
       <h3> Attendees: </h3>
