@@ -4,6 +4,33 @@
       <div class="container">
         <hr class="hr-lg mt-0 mb-3 w-10 mx-auto hr-primary" />
         <h2 class="text-white text-center text-uppercase font-weight-bold my-0">
+          What have you landed lately?
+        </h2>
+        <h5 class="text-center font-weight-light mt-2 mb-0 text-grey">
+          Post a status
+        </h5>
+        <input type="text" v-model="newStatusText" placeholder="Land a new trick?"/> 
+        <button v-on:click="createStatus()">Post Status</button>
+        <hr class="mb-5 w-50 mx-auto" />
+        <div class="row">
+          <div class="col-md-4 d-md-flex" v-for="status in myStatuses">
+            <blockquote class="blockquote-bubble text-center" data-animate="fadeIn" data-animate-delay="0.1">
+              <p class="blockquote-bubble-content bg-white">{{status.text}}</p>
+              <small class="text-grey">
+                  <img src="assets/img/team/jimi.jpg" alt="Jimi Bloggs" class="rounded-circle mr-2" />
+                  Jimi Bloggs <span class="text-primary font-weight-bold">/</span> <a href="#">@mrjimi</a>
+                </small>
+            </blockquote>
+          </div>
+          
+        </div>
+      </div>
+
+    </div>
+    <div id="testimonials" class="p-3 py-lg-6 bg-dark">
+      <div class="container">
+        <hr class="hr-lg mt-0 mb-3 w-10 mx-auto hr-primary" />
+        <h2 class="text-white text-center text-uppercase font-weight-bold my-0">
           See What Other Trickers Have Been Up to
         </h2>
         <h5 class="text-center font-weight-light mt-2 mb-0 text-grey">
@@ -23,6 +50,7 @@
           
         </div>
       </div>
+      
     </div>
   <!-- ======== @Region: #highlighted ======== -->
 
