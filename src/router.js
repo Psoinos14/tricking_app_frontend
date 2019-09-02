@@ -34,11 +34,6 @@ export default new Router({
       component: UsersNew
     },
     {
-      path: "/login",
-      name: "home",
-      component: Home
-    },
-    {
       path: "/logout",
       name: "logout",
       component: Logout
@@ -47,6 +42,11 @@ export default new Router({
       path: "/gyms",
       name: "gyms-index",
       component: GymsIndex
+    },
+    {
+      path: "/home",
+      name: "home",
+      component: Home
     },
     {
       path: '/day_and_times/new',
