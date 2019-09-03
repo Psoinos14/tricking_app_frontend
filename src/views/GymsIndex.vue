@@ -6,10 +6,10 @@
       <div class="container">
         <hr class="hr-lg mt-0 mb-3 w-10 mx-auto hr-primary" />
         <h2 class="text-center text-uppercase font-weight-bold my-0">
-          Pricing Plans
+          All Gyms
         </h2>
         <h5 class="text-center font-weight-light mt-2 mb-0 text-muted">
-          Competitive pricing plans to suit your needs
+          See locations hosting open gym
         </h5>
         <hr class="mb-5 w-50 mx-auto" />
         <div class="row pricing-stack">
@@ -34,10 +34,10 @@
         <!-- Plan features -->
         <div class="bg-white bg-op-4 bg-shadow py-3 mt-4 text-center">
           <h5 class="d-inline-block pr-1 my-0">
-            All Plans Include:
+            Head Over to All Sesssions to see the day, time, and all who are going to each session of each gym
           </h5>
-          <p class="d-inline-block text-black-50 my-0">90 day money back guarantee <span class="text-primary font-weight-bold mx-2">//</span> 24/7 telephone support <span class="text-primary font-weight-bold mx-2">//</span> FREE Setup <span class="text-primary font-weight-bold mx-2">//</span> Migration
-            Help <span class="text-primary font-weight-bold mx-2">//</span> Developer API</p>
+          <p class="d-inline-block text-black-50 my-0"> Train with your friends <span class="text-primary font-weight-bold mx-2">//</span> Meet new people <span class="text-primary font-weight-bold mx-2">//</span> Land new tricks <span class="text-primary font-weight-bold mx-2">//</span> 
+           Get a good workout <span class="text-primary font-weight-bold mx-2">//</span> Have fun</p>
         </div>
       </div>
     </div>
@@ -50,62 +50,63 @@
       <h2 class="text-center text-uppercase font-weight-bold my-0">
         Core Features
       </h2>
-      <h5 class="text-center font-weight-light mt-2 mb-0 text-muted">
-        Great features, great product!
-      </h5>
       <hr class="mb-5 w-50 mx-auto" />
       <div class="row text-center">
         <div class="col-lg-4 py-1">
           <i class="la la-tachometer icon-3x text-primary" data-animate="fadeIn" data-animate-delay="0.1"></i>
           <h5 class="mt-1 op-8">
-            Fully Optimized
+            Login
           </h5>
-          <p class="text-sm text-black-50">Comis facilisi pala praemitto qui veniam. Erat ex metuo nibh nutus pertineo sagaciter torqueo.</p>
+          <p class="text-sm text-black-50">Login to see your friends statuses.</p>
         </div>
         <div class="col-lg-4 py-1">
           <i class="la la-wrench icon-3x text-primary" data-animate="fadeIn" data-animate-delay="0.2"></i>
           <h5 class="mt-1 op-8">
-            Free Support
+            Post Statuses
           </h5>
-          <p class="text-sm text-black-50">Amet conventio huic secundum torqueo. Gilvus molior plaga quadrum scisco sudo vel venio virtus volutpat.</p>
+
+          <p class="text-sm text-black-50">Tell your friends what big trick you just landed!</p>
         </div>
         <div class="col-lg-4 py-1">
           <i class="la la-rocket icon-3x text-primary" data-animate="fadeIn" data-animate-delay="0.3"></i>
           <h5 class="mt-1 op-8">
-            Free Upgrades
+            View your friends statuses
           </h5>
-          <p class="text-sm text-black-50">Appellatio diam esse gemino humo iusto neque nutus.</p>
+          <p class="text-sm text-black-50">See what your friends have been up to.</p>
         </div>
         <div class="col-lg-4 py-1">
           <i class="la la-area-chart icon-3x text-primary" data-animate="fadeIn" data-animate-delay="0.4"></i>
           <h5 class="mt-1 op-8">
-            99.9% Uptime
+            See Gyms
           </h5>
-          <p class="text-sm text-black-50">Enim imputo oppeto. Amet camur defui gilvus huic tincidunt velit.</p>
+          <p class="text-sm text-black-50">See every gym and information about that gym in our database.</p>
         </div>
         <div class="col-lg-4 py-1">
           <i class="la la-users icon-3x text-primary" data-animate="fadeIn" data-animate-delay="0.5"></i>
           <h5 class="mt-1 op-8">
-            Multiuser
+            See all Open Gym sessions
           </h5>
-          <p class="text-sm text-black-50">Camur capto esse genitus ludus natu occuro vereor vero virtus.</p>
+          <p class="text-sm text-black-50">See (and sign up for!) every Open Gym session for each gym, the time, location, and all other trickers attending this session.</p>
         </div>
         <div class="col-lg-4 py-1">
           <i class="la la-plug icon-3x text-primary" data-animate="fadeIn" data-animate-delay="0.6"></i>
           <h5 class="mt-1 op-8">
-            Plug n play
+            Post a new session!
           </h5>
-          <p class="text-sm text-black-50">Eros exerci magna. Cogo facilisis humo iustum lenis obruo occuro persto proprius.</p>
+          <p class="text-sm text-black-50">Know a gym that is adding a new Open Gym time to their weekly schedule? Add it here and see it in All Sessions!</p>
         </div>
       </div>
     </div>
-        <!--Pricing Table-->
-    
+    <!-- Why AppStrap -->
+    <!--Pricing Table-->
     <!-- Steps -->
+
+    <!-- Video background MDR -->
     
+    <!--Projects carousel -->
     
     <!--Customer testimonial-->
-
+    
   </div>
 
   <!-- ======== @Region: #content-below ======== -->

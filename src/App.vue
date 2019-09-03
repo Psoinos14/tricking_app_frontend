@@ -7,20 +7,7 @@
   <!-- ======== @Region: #header ======== -->
   <div id="header">
 
-    <!--Header upper region-->
-    <div class="header-upper">
-      <!-- all direct children of the .header-inner element will be vertically aligned with each other you can override all the behaviours using the flexbox utilities (flexbox.htm) All elements with .header-brand & .header-block-flex wrappers will automatically be aligned inline & vertically using flexbox, this can be overridden using the flexbox utilities (flexbox.htm) Use .header-block to stack elements within on small screen & "float" on larger screens use .order-first or/and .order-last classes to make an element show first or last within .header-inner or .headr-block elements -->
-      <div class="header-inner container">
-        <!--user menu-->
-        <div class="header-block-flex order-1 mr-auto">
-          <nav class="nav nav-sm header-block-flex">
-            <a class="nav-link d-md-none" href="login.html"><i class="fa fa-user"></i></a>
-            <a class="nav-link text-xs text-uppercase d-none d-md-block" href="#signup-modal" data-toggle="modal">Sign Up</a> <a class="nav-link text-xs text-uppercase d-none d-md-block" href="#login-modal" data-toggle="modal">Login</a>
-          </nav>
-          <div class="header-divider header-divider-sm"></div>
-        </div>
-      </div>
-    </div>
+    
     <div data-toggle="sticky">
 
       <!--Header search region - hidden by default -->
@@ -39,7 +26,7 @@
         <div class="header-inner container">
           <!--branding/logo -->
           <div class="header-brand">
-            <a class="header-brand-text" href="index.html" title="Home">
+            <a class="header-brand-text" href="/home" title="Home">
               <h1 class="h2">
                 <span class="header-brand-text-alt">Trick</span>Together<span class="header-brand-text-alt">.</span>
               </h1>
@@ -85,8 +72,14 @@
                 </li>
 
                 <li class="nav-item">
-                  <a href="/day_and_times/new" class="nav-link" id="pages-drop">New Session</a>
+                  <a href="/day_and_times_new" class="nav-link" id="pages-drop">New Session</a>
                   <!-- Menu -->
+                </li>
+                <li class="nav-item">
+                  <a href="/day_and_times" class="nav-link" id="pages-drop">All Sessions</a>
+                </li>
+                <li class="nav-item">
+                  <a href="/friend_requests" class="nav-link" id="pages-drop">Friend Requests</a>
                 </li>
               </ul>
             </div>
@@ -99,14 +92,8 @@
 
 
 <!-- MY CODE --------************************************************* -->
-      <router-link to="/">Login</router-link> |
-      <router-link to="/home"> Home </router-link> |
       <router-link to="/users/new">New User</router-link> |
-      <router-link to="/logout">Logout</router-link> |
-      <router-link to="/gyms">All Gyms</router-link> |
       <router-link to="/day_and_times/new">New Session</router-link> |
-      <router-link to="/day_and_times"> All Sessions </router-link> |
-      <router-link to="/friend_requests"> Friend Requests</router-link> |
       <router-link to="/about">About</router-link> |
     <!-- </div>
  --><!-- MY CODE ----------**************************************************** -->

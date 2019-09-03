@@ -1,5 +1,6 @@
 <template>
-  <div class="container">
+  <div></div>
+<!-- <div class="container">
     <h1>New Session</h1>
     <form v-on:submit.prevent="createDayAndTime()">
       <ul>
@@ -7,13 +8,13 @@
       </ul>
       Date and Time:
       <input type="datetime-local" v-model="newDayAndTimeDay" />
-      <!-- Time:
-      <input type="text" v-model="newDayAndTimeTime" placeholder="blanktime"/> -->
       Gym:
       <input type="text" v-model="newDayAndTimeGymID" />
       <input type="submit" value="Create" />
     </form>
-  </div>
+  </div> -->
+  
+  
 </template>
 
 <script>
@@ -39,7 +40,7 @@ export default {
       var params = {
         datetime: this.newDayAndTimeDay,
         
-        gym_id: this.newDayAndTimeGymID,
+        gym_id: this.newDayAndTimeGymID
       };
       axios
         .post("/api/day_and_times", params)

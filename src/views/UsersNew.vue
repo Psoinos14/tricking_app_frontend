@@ -1,18 +1,7 @@
 <template>
   <div class="container">
     <h1>New User</h1>
-    <div class="header-inner container">
-        
-        <div class="header-block-flex order-1 mr-auto">
-          <nav class="nav nav-sm header-block-flex">
-            <a class="nav-link d-md-none" href="login.html"><i class="fa fa-user"></i></a>
-            <a class="nav-link text-xs text-uppercase d-none d-md-block" href="#signup-modal" data-toggle="modal">Sign Up</a> <a class="nav-link text-xs text-uppercase d-none d-md-block" href="#login-modal" data-toggle="modal">Login</a>
-          </nav>
-          <div class="header-divider header-divider-sm"></div>
-  
-        </div>
-        
-    </div>
+    
     <form v-on:submit.prevent="createUser()">
       <ul>
         <li v-for="error in errors">{{ error }}</li>

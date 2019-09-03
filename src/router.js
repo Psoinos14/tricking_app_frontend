@@ -49,7 +49,7 @@ export default new Router({
       component: Home
     },
     {
-      path: '/day_and_times/new',
+      path: '/day_and_times_new',
       name: 'day_and_times-new',
       component: DayAndTimesNew
     },
