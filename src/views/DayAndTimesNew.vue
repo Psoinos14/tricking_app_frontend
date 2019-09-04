@@ -17,13 +17,18 @@
       <div class="form-group row">
         <label for="example-text-input" class="col-sm-2 col-form-label">Gym Name</label>
         <div class="col-sm-10">
-          <input class="form-control" type="text" v-model ="newDayAndTimeGymID">
+         <!--  <input class="form-control" type="select" v-model="newDayAndTimeGymName"> -->
+          <select data-toggle="select" class="form-control" v-model="newDayAndTimeGymID">
+            <option v-for="gym in gyms" v-bind:value="gym.id">
+              {{gym.name}}
+            </option>
+          </select>
         </div>
       </div>
       <div class="form-group row">
         <label for="example-text-input" class="col-sm-2 col-form-label">Date & Time</label>
         <div class="col-sm-10">
-          <input class="form-control" type="datetime-local" v-model ="newDayAndTimeDay">
+          <input class="form-control" type="datetime-local" v-model="newDayAndTimeDay">
         </div>
       </div>
       
@@ -163,8 +168,16 @@ export default {
       newDayAndTimeDay: "",
       newDayAndTimeTime: "",
       newDayAndTimeGymID: "",
+      newDayAndTimeGymName: "",
+      gyms: [],
       errors: []
     };
+  },
+  created: function() {
+    axios.get("/api/gyms").then(response => {
+      this.gyms = response.data;
+      console.log(response.data)
+    });
   },
   // created: function () {
   //   // axios

@@ -23,7 +23,7 @@
                 <ul class="list-unstyled text-sm text-black-50">
                   <li> {{gym.address}} </li>
                 </ul>
-                <a href="#" class="btn btn-primary btn-rounded btn-lg">Sign Up</a>
+                
               </div>
             </div>
           </div>
