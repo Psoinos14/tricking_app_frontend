@@ -66,7 +66,7 @@
                   <a href="#" class="nav-link dropdown-toggle" id="more-drop" data-toggle="dropdown" data-hover="dropdown">Login</a>
                   <div class="dropdown-menu">
                     <router-link to="/" class="dropdown-item">Login</router-link>
-                    <router-link to="/users/new" class="dropdown-item">Signup</router-link>
+                    <router-link to="/users_new" class="dropdown-item">Signup</router-link>
                     <router-link to="/logout" class="dropdown-item">Logout</router-link>
                   </div>
                 </li>
@@ -92,7 +92,6 @@
 
 
 <!-- MY CODE --------************************************************* -->
-      <router-link to="/users/new">New User</router-link> |
       <router-link to="/day_and_times/new">New Session</router-link> |
       <router-link to="/about">About</router-link> |
     <!-- </div>
