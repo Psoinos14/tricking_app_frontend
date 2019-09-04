@@ -37,13 +37,9 @@
           <!-- other header content -->
           <div class="header-block order-12">
 
-            <!--Search trigger -->
-            <a href="#search" class="btn btn-icon btn-link header-btn float-right order-11" data-toggle="search-form" data-target=".header-search"><i class="fa fa-search fa-flip-horizontal search-icon"></i></a>
-
+           
             <!-- mobile collapse menu button - data-toggle="collapse" = default BS menu - data-toggle="off-canvas" = Off-cavnas Menu - data-toggle="overlay" = Overlay Menu -->
-            <a href="#top" class="btn btn-link btn-icon header-btn float-right d-lg-none" data-toggle="off-canvas" data-target=".navbar-main" data-settings='{"cloneTarget":true, "targetClassExtras": "navbar-offcanvas"}'> <i class="fa fa-bars"></i> </a>
-            <!--Show/hide trigger for #offcanvas-sidebar -->
-            <a href="#" title="Click me you'll get a surprise" class="btn btn-icon btn-link header-btn float-right order-last" data-toggle="off-canvas" data-target="#offcanvas-sidebar" data-settings='{"cloneTarget":false}'> <i class="ion-android-more-vertical"></i> </a>
+            
           </div>
 
           <div class="navbar navbar-expand-md navbar-static-top">
@@ -92,8 +88,6 @@
 
 
 <!-- MY CODE --------************************************************* -->
-      <router-link to="/day_and_times/new">New Session</router-link> |
-      <router-link to="/about">About</router-link> |
     <!-- </div>
  --><!-- MY CODE ----------**************************************************** -->
     <router-view/>

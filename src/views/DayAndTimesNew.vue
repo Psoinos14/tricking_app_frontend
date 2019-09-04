@@ -13,6 +13,8 @@
       <input type="submit" value="Create" />
     </form>
   </div> -->
+  <p> </p>
+  <p> </p>
     <form v-on:submit.prevent="createDayAndTime()">
       <div class="form-group row">
         <label for="example-text-input" class="col-sm-2 col-form-label">Gym Name</label>
