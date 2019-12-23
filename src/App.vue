@@ -26,11 +26,11 @@
         <div class="header-inner container">
           <!--branding/logo -->
           <div class="header-brand">
-            <a class="header-brand-text" href="/home" title="Home">
+            <router-link to="/home" class="header-brand-text" title="Home">
               <h1 class="h2">
                 <span class="header-brand-text-alt">Trick</span>Together<span class="header-brand-text-alt">.</span>
               </h1>
-            </a>
+            </router-link>
             <div class="header-divider d-none d-lg-block"></div>
             <div class="header-slogan d-none d-lg-block"></div>
           </div>
