@@ -53,7 +53,7 @@
 
                 <!-- Pages -->
                 <li class="nav-item">
-                  <a href="/gyms" class="nav-link" id="pages-drop">All Gyms</a>
+                  <router-link to="/gyms" class="nav-link" id="pages-drop">All Gyms</router-link>
                   <!-- Menu -->
                 </li>
 
@@ -68,14 +68,14 @@
                 </li>
 
                 <li class="nav-item">
-                  <a href="/day_and_times_new" class="nav-link" id="pages-drop">New Session</a>
+                  <router-link to="/day_and_times_new" class="nav-link" id="pages-drop">New Session</router-link>
                   <!-- Menu -->
                 </li>
                 <li class="nav-item">
-                  <a href="/day_and_times" class="nav-link" id="pages-drop">All Sessions</a>
+                  <router-link to="/day_and_times" class="nav-link" id="pages-drop">All Sessions</router-link>
                 </li>
                 <li class="nav-item">
-                  <a href="/friend_requests" class="nav-link" id="pages-drop">Friend Requests</a>
+                  <router-link to="/friend_requests" class="nav-link" id="pages-drop">Friend Requests</router-link>
                 </li>
               </ul>
             </div>

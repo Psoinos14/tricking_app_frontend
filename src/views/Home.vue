@@ -52,7 +52,7 @@
               <p class="blockquote-bubble-content bg-white">{{status.text}}</p>
               <small class="text-grey">
                   <img src="assets/img/team/jimi.jpg" alt="Jimi Bloggs" class="rounded-circle mr-2" />
-                  {{friend.user}} <span class="text-primary font-weight-bold">/</span> <a href="#">@mrjimi</a>
+                  {{friend.user}} 
 
                 </small>
             </blockquote>
